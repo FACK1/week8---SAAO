@@ -2,8 +2,7 @@ const path = require('path');
 const express = require('express');
 const exphbs = require('express-handlebars');
 
-const routes=require('../routes/index.js')
-//const picData=require('../queries/getImg.js');
+const routes=require('../controllers/index.js')
 
 const app = express();
 
