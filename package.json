@@ -1,0 +1,31 @@
+{
+  "name": "week8---saao",
+  "version": "1.0.0",
+  "description": "Week 8 - Express app.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pg": "^7.7.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "env2": "^2.2.2",
+    "nodemon": "^1.18.9",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  },
+  "scripts": {
+    "test": "tape | tap-spec",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FACK1/week8---SAAO.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FACK1/week8---SAAO/issues"
+  },
+  "homepage": "https://github.com/FACK1/week8---SAAO#readme"
+}
