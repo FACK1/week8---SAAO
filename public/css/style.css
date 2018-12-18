@@ -1,0 +1,10 @@
+
+.header{
+  background-image: url("../assets/camera-man.jpg");
+}
+input[type=text],
+label,
+textarea,
+h1{
+    color: white;
+}
