@@ -3,7 +3,6 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 
 const routes=require('../controllers/index.js')
-//const picData=require('../queries/getImg.js');
 
 const app = express();
 
