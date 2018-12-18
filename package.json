@@ -18,12 +18,8 @@
   },
   "scripts": {
     "test": "tape | tap-spec",
-<<<<<<< HEAD
-    "dev": "nodemon src/server/server.js"
-=======
     "dev": "nodemon src/server/server.js",
     "start": "node src/server/server.js"
->>>>>>> master
   },
   "repository": {
     "type": "git",
