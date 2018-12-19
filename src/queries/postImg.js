@@ -7,7 +7,6 @@ const postImg = (url, description, cb) => {
     if (error) {
       cb(error);
     } else {
-      console.log("we have added a new image to the db");
       cb(null);
     }
   });

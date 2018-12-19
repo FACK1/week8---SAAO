@@ -4,6 +4,7 @@
   "description": "Week 8 - Express app.",
   "main": "index.js",
   "dependencies": {
+    "alert-node": "^1.2.3",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "pg": "^7.7.1"
