@@ -1,7 +1,125 @@
+*{
+  margin:0px;
+  padding:0px;
+}
 
-input[type=text],
-label,
-textarea,
-h1{
-    color: black;
+body {
+  font-family: 'Overlock SC';
+  background-color: #244149;
+  }
+
+header{
+  background-image:url("../assets/architecture-camera-city-827209.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:100vw;
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: white 5px solid;
+}
+
+.title{
+  font-size: 100px;
+  margin-top:50px;
+  text-align: center;
+  color: white;
+}
+
+.sub-title{
+    font-size: 50px;
+    margin-top:50px;
+    text-align: center;
+    color: white;
+    text-decoration: underline  solid white;
+}
+
+.form{
+  width: 50%;
+  margin-top:40px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 100%;
+  font-family: 'Overlock SC';
+  font-size: 18px;
+}
+
+label{
+  font-size: 20px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #148C9D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Overlock SC';
+  font-size: 20px;
+}
+
+input[type=submit]:hover {
+  background-color: #60B8C1;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #244149;
+  margin: 0;
+  padding:50px;
+}
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 28%;
+  background-color: white;
+  height: 380px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.gallery:hover {
+  border: 1px solid #60B8C1;
+}
+
+.img-item {
+  width: 100%;
+  height: 60%;
+  border-radius: 20px;
+}
+
+.dec-item {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Overlock SC';
+  font-size: 18px;
+  font-weight: bold;
+  color: #148C9D;
+}
+
+/* For Mobile*/
+@media only screen and (max-width: 650px) {
+  .gallery {
+    width: 90%;
+  }
 }

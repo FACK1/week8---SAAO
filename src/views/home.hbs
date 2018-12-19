@@ -1,9 +1,9 @@
 
 
 <header class="header">
-<h1>Images</h1>
+<h1 class="title">Images</h1>
 
-<section>
+<section class="form">
   <form action="/add" method="POST">
      <label for="img">Image Url</label>
      <input type="text" name="img_url" value="" placeholder="Your image url ..." required>
@@ -11,16 +11,20 @@
       <p>This must be an image url</p>
       {{/if}}
      <label for="des">Description</label>
-     <textarea name="description" placeholder="Write something.." style="height:200px" required></textarea>
+
+     <textarea name="des" placeholder="Write something.." required></textarea>
 
      <input type="submit" value="Submit">
    </form>
 </section>
 </header>
+  <h3 class="sub-title">Your Images</h3>
 
-<section>
-  {{#each data}}
-  <img src="{{url}}">
-  <h2>{{description}}</h2>
-  {{/each}}
-</section>
+  <section class="container">
+      {{#each data}}
+        <div class="gallery">
+          <img class="img-item" src="{{url}}">
+          <p class="dec-item">{{description}}</p>
+        </div>
+        {{/each}}
+  </section>
