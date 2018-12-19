@@ -7,7 +7,7 @@ exports.get=(req,res)=>{
 
   getData((err, result)=>{
     if (err) {
-      error.serverErorr(req,res);
+      error.serverErorr(null, req,res);
     }else {
     res.render("home",{data:result});
     }
@@ -15,19 +15,22 @@ exports.get=(req,res)=>{
 };
 
 exports.post = (request, res) => {
-
 let data = '';
 request.on('data', chunk => {
 	data += chunk;
 });
 request.on('end', (err) => {
 	const {img,des} = queryString.parse(data);
+  console.log("img",img);
+  console.log("des",des);
 	if (err) {
-		error.serverErorr(req, res);
+    console.log("1",err);
+		error.serverErorr(null, request, res);
 	}
 	addData(img, des, (err) => {
 		if (err) {
-			error.serverErorr(req, res);
+      console.log("2",err);
+			error.serverErorr(null, request, res);
 		} else {
       alert("we have added a new image to the db");
 
