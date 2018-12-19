@@ -41,20 +41,24 @@ Footer: (optional) maybe a copyrights.
 ##### It should be noted that you need to run pgcli in your terminal before proceeding. To do this: type in `pgcli` in your terminal, and hit enter.
 
 2- Go the root directory ("week8--SAAO" in this case), make a file "config.env".
+3
 
-6- Copy paste this into the file:
-```
-"DATABASE_URL=postgres://mhbjqdobxqbhzl:a7f5421562bc9012314109297a56ea6c2ef68c5a73c583b228c9dc4758bf42c3@ec2-23-21-122-141.compute-1.amazonaws.com:5432/d2msf6ne5gtccb"
-```
-This is to establish connection between our server and database. And it is used throughout the code of the app.
+3-Now run the command `CREATE DATABASE` image; on your terminal, after you cd into the repo you just cloned. This command will create a database. Notice how there should be a semi-colon after every command.
+
+4- Then, run the command `CREATE USER imager with password '0000'`;. This will create a user called imager, with a password of 0000.
+
+5- Then, run `GRANT ALL PRIVILEGES ON DATABASE image to imager`;. This command will grant our imager with all priviliges and rights to use and access the database.
+
+6- Go the root directory ("week8--SAAO" in this case), make a file "config.env".
+
+5- Copy paste this into the file: `DB_URL = postgres://imager:0000@localhost:5432/image`. This is to establish connection between our server and database. And it is used throughout the code of the app.
 
 7- Now, we need to install two modules that our app relies on to funciton. Those are pg and env2. Run the command `npm i pg env2` to install them in one go.
 
-8- Now we have a file called "db_build.js" in the repo. Which is basically what builds our database. So, run this command `node <path to the file/>` which in our case it's `node src/database/db_build.js`.
+8- Now we have a file called "db_build.js" in the repo. Which is basically what builds our database. So, run this command `node <path to the file/>` which in our case it's `node src/database/db_build.js`. It should show a message of "success" on your terminal.
 
 9- Go to your browser, and in the URL field, write: localhost:8000 and hit enter.
 
 10- Now you should have our app running!
 
 If you are having trouble with running the app let us know by making an issue! And if you think we missed anything also let us know!
-
