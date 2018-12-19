@@ -8,8 +8,10 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "pg": "^7.7.1"
+
   },
   "devDependencies": {
+      "supertest": "^3.3.0",
     "env2": "^2.2.2",
     "eslint": "^5.10.0",
     "joi": "^14.3.0",
@@ -19,7 +21,7 @@
     "url": "^0.11.0"
   },
   "scripts": {
-    "test": "tape | tap-spec",
+    "test": "NODE_ENV=TEST tape src/tests/test.js | tap-spec",
     "dev": "nodemon src/server/server.js",
     "start": "node src/server/server.js"
   },

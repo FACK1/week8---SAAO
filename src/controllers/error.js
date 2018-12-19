@@ -6,6 +6,6 @@ exports.pageNotFound =(req,res)=>{
 };
 
 exports.serverErorr =(error,req,res,next)=>{
- res.status(500)
+ res.status(500);
  res.render("500");
 };
