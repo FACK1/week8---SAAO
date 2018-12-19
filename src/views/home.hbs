@@ -6,10 +6,12 @@
 <section>
   <form action="/add" method="POST">
      <label for="img">Image Url</label>
-     <input type="text" name="img" value="" placeholder="Your image url ..." required>
-
+     <input type="text" name="img_url" value="" placeholder="Your image url ..." required>
+     {{#if err }}
+      <p>This must be an image url</p>
+      {{/if}}
      <label for="des">Description</label>
-     <textarea name="des" placeholder="Write something.." style="height:200px" required></textarea>
+     <textarea name="description" placeholder="Write something.." style="height:200px" required></textarea>
 
      <input type="submit" value="Submit">
    </form>
