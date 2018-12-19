@@ -15,24 +15,15 @@ exports.get=(req,res)=>{
 };
 
 exports.post = (request, res) => {
-
-let data = '';
-request.on('data', chunk => {
-	data += chunk;
-});
-request.on('end', (err) => {
-	const {img,des} = queryString.parse(data);
-	if (err) {
-		error.serverErorr(req, res);
-	}
-	addData(img, des, (err) => {
+  const {img_url, description} = request.body;
+  console.log(request.body);
+  // console.log('here1',img_url,description);
+	addData(img_url, description, (err) => {
 		if (err) {
 			error.serverErorr(req, res);
 		} else {
       alert("we have added a new image to the db");
-
-    res.redirect("/")
+      res.redirect("/")
 		}
 	});
-})
-}
+};
