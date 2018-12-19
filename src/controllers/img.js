@@ -1,4 +1,3 @@
-const path = require('path');
 const getData=require('../queries/getImg.js')
 const error=require('./error.js');
 exports.get=(req,res)=>{
