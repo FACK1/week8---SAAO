@@ -7,12 +7,11 @@
   <form action="/add" method="POST">
      <label for="img">Image Url</label>
      <input type="text" name="img_url" value="" placeholder="Your image url ..." required>
-     {{#if err }}
-      <p>This must be an image url</p>
-      {{/if}}
      <label for="des">Description</label>
      <textarea name="description" placeholder="Write something.." style="height:200px" required></textarea>
-
+     {{#if err }}
+      <p>{{err}}</p>
+      {{/if}}
      <input type="submit" value="Submit">
    </form>
 </section>
