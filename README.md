@@ -3,7 +3,9 @@ Week 8 - Express app.
 
 ### What our app is:
 
-Our app's idea revolves around displaying images with descriptions while enabling the user to add images with descriptions of their own. 
+Our app's idea revolves around displaying images with descriptions while enabling the user to add images with descriptions of their own.
+
+### On Heroku: [MyPics](http://profileimge.herokuapp.com/)
 
 ### Endpoints:
 
