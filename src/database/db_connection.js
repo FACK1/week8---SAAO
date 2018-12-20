@@ -13,6 +13,6 @@ if (!DATABASE_URL) {
 const option = {
   connectionString: DATABASE_URL
 }
-const hostname = url.parse(DATABASE_URL).hostname
+const hostname = url.parse(DATABASE_URL).hostname // eslint-disable-line node/no-deprecated-api
 option.ssl = (hostname !== 'localhost')
 module.exports = new Pool(option)

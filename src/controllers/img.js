@@ -14,7 +14,7 @@ exports.get = (req, res) => {
 
 exports.post = (request, res) => {
   console.log(request.error)
-  const { img_url, description } = request.body
+  const { img_url, description } = request.body // eslint-disable-line camelcase
   if (request.error) {
     getData((err, result) => {
       if (err) {
@@ -29,6 +29,7 @@ exports.post = (request, res) => {
         error.serverErorr(null, request, res)
       } else {
         alert('we have added a new image to the db')
+        // res.locals("")
         res.redirect('/')
       }
     })
