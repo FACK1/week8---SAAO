@@ -53,7 +53,7 @@ Footer: (optional) maybe a copyrights.
 
 6- Go the root directory ("week8--SAAO" in this case), make a file "config.env".
 
-5- Copy paste this into the file: `DB_URL = postgres://imager:0000@localhost:5432/image`. This is to establish connection between our server and database. And it is used throughout the code of the app.
+5- Copy paste this into the file: `DATABASE_URL_TEST = postgres://imager:0000@localhost:5432/image`. This is to establish connection between our server and database. And it is used throughout the code of the app.
 
 7- Now, we need to install two modules that our app relies on to funciton. Those are pg and env2. Run the command `npm i pg env2` to install them in one go.
 
