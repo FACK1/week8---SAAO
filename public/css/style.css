@@ -7,14 +7,19 @@ body {
   font-family: 'Overlock SC';
   background-color: #244149;
   }
+.mess{
+  font-size: 45px;
+text-align: center;
+color: white;
+border-bottom: white 5px solid;
 
+}
 header{
   background-image:url("../assets/architecture-camera-city-827209.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width:100vw;
-  height:100vh;
+  height:80vh;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +28,7 @@ header{
 
 .title{
   font-size: 100px;
-  margin-top:50px;
+  margin-top:10px;
   text-align: center;
   color: white;
 }
@@ -38,7 +43,7 @@ header{
 
 .form{
   width: 50%;
-  margin-top:40px;
+  margin-top:20px;
   display: flex;
   align-content: center;
   justify-content: center;

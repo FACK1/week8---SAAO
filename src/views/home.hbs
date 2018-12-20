@@ -1,5 +1,4 @@
 
-
 <header class="header">
 <h1 class="title">Images</h1>
 
@@ -8,12 +7,13 @@
      <label for="img">Image Url</label>
      <input type="text" name="img_url" value="" placeholder="Your image url ..." required>
      <label for="des">Description</label>
-     
+
      <textarea name="description" placeholder="Write something.." required></textarea>
      {{#if err }}
       <p>{{err}}</p>
       {{/if}}
      <input type="submit" value="Submit">
+     <p class="mess">{{messege}}</p>
    </form>
 </section>
 </header>

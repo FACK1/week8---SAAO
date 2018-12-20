@@ -16,5 +16,8 @@ const buildDB = (cb) => {
     }
   })
 }
-// buildDB();
-module.exports = buildDB
+if (process.env.NODE_ENV === "TEST") {
+  module.exports = buildDB;
+} else {
+  buildDB();
+}

@@ -2,7 +2,7 @@ const dbConnection = require('../database/db_connection')
 
 const postImg = (url, description, cb) => {
   const setImgQuery =
-    'INSERT INTO image (url, description) VALUES ($1, $2) RETURNING id;'
+    'INSERT INTO image (url, description) VALUES ($1, $2);'
   dbConnection.query(setImgQuery, [url, description], error => {
     if (error) {
       cb(error)
