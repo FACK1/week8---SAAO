@@ -28,7 +28,7 @@ exports.post = (request, res) => {
       if (err) {
         error.serverErorr(null, request, res)
       } else {
-        alert('we have added a new image to the db')
+        alert('added an image')
         // res.locals("")
         res.redirect('/')
       }
