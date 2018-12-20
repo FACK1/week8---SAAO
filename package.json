@@ -8,14 +8,18 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "pg": "^7.7.1"
-
   },
   "devDependencies": {
-      "supertest": "^3.3.0",
     "env2": "^2.2.2",
     "eslint": "^5.10.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
     "joi": "^14.3.0",
     "nodemon": "^1.18.9",
+    "supertest": "^3.3.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.9.1",
     "url": "^0.11.0"
@@ -23,7 +27,10 @@
   "scripts": {
     "test": "NODE_ENV=TEST tape src/tests/test.js | tap-spec",
     "dev": "nodemon src/server/server.js",
-    "start": "node src/server/server.js"
+    "start": "node src/server/server.js",
+    "lint": "eslint ./src",
+    "lint-fix": "eslint --fix ./src",
+    "eslint-init": "eslint --init ./src"
   },
   "repository": {
     "type": "git",

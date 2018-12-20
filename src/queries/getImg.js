@@ -1,12 +1,12 @@
-const db_connection = require("../database/db_connection");
+const dbConnection = require('../database/db_connection')
 
 const getImg = cb => {
-  db_connection.query("select * from  image;", (err, data) => {
+  dbConnection.query('select * from  image;', (err, data) => {
     if (err) {
-      cb(err);
+      cb(err)
     } else {
-      cb(null, data.rows);
+      cb(null, data.rows)
     }
-  });
-};
-module.exports = getImg;
+  })
+}
+module.exports = getImg
